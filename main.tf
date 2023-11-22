@@ -28,15 +28,3 @@ resource "aws_budgets_budget" "cost" {
     }
 }
 
-resource "aws_s3_bucket" "bucket" {
-    bucket = "actions-test-bucket-ramon"
-    tags = {
-        Name = "Terrafrom-Created"
-        Environment = "Dev"
-    }
-}
-
-resource "aws_s3_bucket_acl" "access_management" {
-    bucket = aws_s3_bucket.bucket.id
-    acl = "private"
-}
