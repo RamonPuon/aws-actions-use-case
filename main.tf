@@ -29,7 +29,7 @@ resource "aws_budgets_budget" "cost" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-    bucket = "actions-test-bucket"
+    bucket = "actions-test-bucket-ramon"
     tags = {
         Name = "Terrafrom-Created"
         Environment = "Dev"
