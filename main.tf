@@ -24,7 +24,7 @@ resource "aws_budgets_budget" "cost" {
         threshold           = 100
         threshold_type      = "PERCENTAGE"
         notification_type   = "FORECASTED"
-        subscriber_email_address = ["ramon.puon@gmail.com"]
+        subscriber_email_addresses = ["ramon.puon@gmail.com"]
     }
 }
 
